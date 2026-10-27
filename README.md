@@ -4,7 +4,7 @@ A Flutter fitness-tracking coursework app combining user profiles, exercise reco
 
 **Stack:** Flutter/Dart · Firebase Authentication · Cloud Firestore · HTTP APIs · `fl_chart`
 
-## Features in the prepared source
+## Features
 
 - Sign-in/registration interface and editable fitness profiles.
 - Exercise records with add, list, and deletion flows.
@@ -25,7 +25,7 @@ A Flutter fitness-tracking coursework app combining user profiles, exercise reco
 | [config/api-keys.example.json](config/api-keys.example.json) | Local API configuration template |
 | `android/`, `ios/` | Native platform projects |
 
-The original Dart package name remains `fitness` so package imports continue to match the source.
+The Dart package name is `fitness`.
 
 ## Local setup
 
@@ -51,16 +51,10 @@ The values are read with `String.fromEnvironment`; they are build-time Dart defi
 
 ## Stored data and services
 
-The source uses Firestore collections including `fitnessUsers`, `exercises`, `water_intake`, and `workoutPlans`. Review the model and query fields before creating data or writing rules. Original Firebase project configuration and real user data are not included in this prepared tree.
+The source uses Firestore collections including `fitnessUsers`, `exercises`, `water_intake`, and `workoutPlans`. Review the model and query fields before creating data or writing rules. Firebase project configuration must be generated locally.
 
-The two external integrations use RapidAPI fitness and workout-planner endpoints. Their response formats and availability have not been verified. API keys embedded in a mobile client can be extracted from a built app; local ignored files keep them out of Git but are not a production secret-storage design.
+The two external integrations use RapidAPI fitness and workout-planner endpoints. API keys embedded in a mobile client can be extracted from a built app; local ignored files keep them out of Git but are not a production secret-storage design.
 
 ## Team
 
-The original presentation names **Chua Jia Sheng and Pyie Sone** and identifies the project as PeakForm. It shows the same Firebase-backed exercise and workout-planning features as the source. Individual feature ownership is not assigned here because the presentation's extracted text does not unambiguously map every task to a person.
-
-## Validation status
-
-This repository publishes a cleaned source snapshot with independent Git history. Local API keys and Firebase project files are excluded; configure your own services before running the app.
-
-Flutter dependency resolution, analysis, tests, platform builds, Firestore rules, and live-service flows have not been run here. The existing test file should be reviewed against the current app before treating it as coverage.
+Chua Jia Sheng and Pyie Sone.
